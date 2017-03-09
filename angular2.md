@@ -13,6 +13,6 @@
   - 의존성 주입을 활용하면 객체 생성과 설정에 들어가는 코드를 최소화하고 컴포넌트마다 일관된 방법으로 생성한 객체를 제공할 수도 있다.
 
 # 주입기 트리
-  - Angular는 컴포넌트 구성에 따라 주입기 트리가 만들어진다.<br>
+  - Angular는 컴포넌트 구성에 따라 주입기 트리가 만들어진다.<br>
   - 컴포넌트마다 하나의 주입기를 갖는다.(주입기 트리는 컴포넌트 모양과 일치)<br>
 <img src='https://github.com/marche798/tejesama/blob/master/injector_tree.png?raw=true'/>
