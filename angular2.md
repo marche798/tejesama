@@ -21,5 +21,5 @@
 # <제공자>
 ## 1. 제공자를 통한 의존성 주입
 <img src='https://github.com/marche798/tejesama/blob/master/provider_injection_process.png?raw=true'/>
-	- @injectable 장식자 : 해당클래스가 의존성 주입 대상임을 명시, 생략할 수 있으나 의존성 주입 대상인지 여부가 불분명해지므로 선언하자!
+  - @injectable 장식자 : 해당클래스가 의존성 주입 대상임을 명시, 생략할 수 있으나 의존성 주입 대상인지 여부가 불분명해지므로 선언하자!
 
