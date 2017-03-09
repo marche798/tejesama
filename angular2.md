@@ -18,9 +18,11 @@
   - 컴포넌트마다 하나의 주입기를 갖는다.(주입기 트리는 컴포넌트 모양과 일치)<br>
 ![injector_tree](https://github.com/marche798/tejesama/blob/master/injector_tree.png?raw=true)
 
+--- 
+
 # <제공자>
 ## 1. 제공자를 통한 의존성 주입
-<img src='https://github.com/marche798/tejesama/blob/master/provider_injection_process.png?raw=true'/>
+![provider_injection_process](https://github.com/marche798/tejesama/blob/master/provider_injection_process.png?raw=true)
   - @injectable 장식자로 주입할 클래스 선택<br>
 	해당클래스가 의존성 주입 대상임을 명시, 생략할 수 있으나 의존성 주입 대상인지 여부가 불분명해지므로 선언하자!<br>
 	변수나 함수에는 사용불가
@@ -49,7 +51,7 @@
 ```
 
   - 제공자의 종류<br>
-  	1) 값 제공자 : 컨포넌트에 값을 제공<br>
+  	1) 값 제공자 : 컨포넌트에 값을 제공 _(source : value-provider)_<br>
 	2) 팩토리 제공자 : 컴포넌트에 새로운 객체를 만들어 제공<br>
 	3) 클래스 제공자 : 클래스 제공자를 통해 클래스 간 의존 관계를 고려해 만든 객체를 컴포넌트에 제공<br>
 
