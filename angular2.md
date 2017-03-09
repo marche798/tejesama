@@ -2,7 +2,7 @@
 ## 의존성 주입이란??
   - 의존성 주입(Dependency Injection) : 객체 조립과 설정을 위한 소프트웨어 디자인 패턴<br>
   - Angular 에서는 기본적으로 생성자 의존성 주입 패턴을 이용해 의존성을 주입 받음.<br>
-```
+```typescript
 	constructor(private speedmeter: Speedmeter, public engine:Engine) {
 		.....
 	}
@@ -24,7 +24,7 @@
   - @injectable 장식자로 주입할 클래스 선택<br>
 	해당클래스가 의존성 주입 대상임을 명시, 생략할 수 있으나 의존성 주입 대상인지 여부가 불분명해지므로 선언하자!<br>
 	변수나 함수에는 사용불가
-```
+```typescript
 	import { Injectable } from '@angular/core';
 	...
 
