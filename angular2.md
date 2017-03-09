@@ -16,3 +16,8 @@
   - Angular는 컴포넌트 구성에 따라 주입기 트리가 만들어진다.<br>
   - 컴포넌트마다 하나의 주입기를 갖는다.(주입기 트리는 컴포넌트 모양과 일치)<br>
 <img src='https://github.com/marche798/tejesama/blob/master/injector_tree.png?raw=true'/>
+
+# 8.2 제공자
+	제공자를 통한 의존성 주입
+		<img src='https://github.com/marche798/tejesama/blob/master/provider_injection_process.png?raw=true'/>
+		@injectable 장식자 : 해당클래스가 의존성 주입 대상임을 명시, 생략할 수 있으나 의존성 주입 대상인지 여부가 불분명해지므로 선언하자!
