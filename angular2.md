@@ -21,7 +21,7 @@
 # <제공자>
 ## 1. 제공자를 통한 의존성 주입
 <img src='https://github.com/marche798/tejesama/blob/master/provider_injection_process.png?raw=true'/>
-  1) @injectable 장식자<br>
+  - @injectable 장식자로 주입할 클래스 선택<br>
 	해당클래스가 의존성 주입 대상임을 명시, 생략할 수 있으나 의존성 주입 대상인지 여부가 불분명해지므로 선언하자!<br>
 	변수나 함수에는 사용불가
 ```
@@ -33,7 +33,8 @@
 	  ...
 	}
 ```
-
+  
+  - 주입할 클래스를 제공자에 등록 및 생성자로 의존성 주입
 ```
 	import { Engine } from './engine.service';
 	...
@@ -46,7 +47,8 @@
 	 constructor(public engine: Engine) { ... }
 	}
 ```
-  2) 제공자의 종류
+
+  - 제공자의 종류
 
 
 	선택적 장식자를 이용한 의존성 주입
