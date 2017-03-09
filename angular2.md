@@ -21,10 +21,32 @@
 # <제공자>
 ## 1. 제공자를 통한 의존성 주입
 <img src='https://github.com/marche798/tejesama/blob/master/provider_injection_process.png?raw=true'/>
-  - @injectable 장식자<br>
-	해당클래스가 의존성 주입 대상임을 명시, 생략할 수 있으나 의존성 주입 대상인지 여부가 불분명해지므로 선언하자!
-	해당클래스가 의존성 주입 대상임을 명시, 생략할 수 있으나 의존성 주입 대상인지 여부가 불분명해지므로 선언하자!
+  1) @injectable 장식자<br>
+	해당클래스가 의존성 주입 대상임을 명시, 생략할 수 있으나 의존성 주입 대상인지 여부가 불분명해지므로 선언하자!<br>
+	변수나 함수에는 사용불가
+```
+	import { Injectable } from '@angular/core';
+	...
 
+	@Injectable()
+	export class Engine {
+	  ...
+	}
+```
+
+```
+	import { Engine } from './engine.service';
+	...
+
+	@Component({
+	 ...
+	 providers: [Engine]	
+	})
+	export class CarComponent {
+	 constructor(public engine: Engine) { ... }
+	}
+```
+  2) 제공자의 종류
 
 
 	선택적 장식자를 이용한 의존성 주입
