@@ -51,6 +51,7 @@
 ```
 
   - 제공자의 종류<br>
+
    1) 값 제공자 : 컨포넌트에 값을 제공 _(source : value-provider)_<br>
 ```typescript
 	export  let ValueProvider = 
@@ -69,7 +70,8 @@
 		deps : [의존 클래스...]
 	};
 ```
-	3) 클래스 제공자 : 클래스 제공자를 통해 클래스 간 의존 관계를 고려해 만든 객체를 컴포넌트에 제공<br>
+
+   3) 클래스 제공자 : 클래스 제공자를 통해 클래스 간 의존 관계를 고려해 만든 객체를 컴포넌트에 제공<br>
 ```typescript
 	export  let ValueProvider = 
 	{
