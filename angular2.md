@@ -75,13 +75,23 @@
 			```
 <br>
 			
-		 2) 가명 클래스 제공자 : 동일한 기능을 하는 객체가 두개 만들어지는 것을 피하고 싱글톤으로 만들 필요가 있을 경우.
+		 2) 가명 클래스 제공자 : 동일한 기능을 하는 객체가 두개 만들어지는 것을 피하고 싱글톤으로 만들 필요가 있을 경우.<br>
 			```
 				providers: [{ provide: 제공할 클래스, useExisting: 대체 클래스}]
 			```
 <br>
 
-	선택적 장식자를 이용한 의존성 주입
+    - 불투명 토큰을 이용한 제공자 설정 : 인터페이스를 의존성 주입받기 위해 사용
+```typescript
+	export let OpaqueTokenProvider = {
+		provide : 인터페이스를 상속받는 클래스는 사용불가
+	};
+```
+```typescript
+	export let OPAQUE_TOKEN = new OpaqueToken('OPAQUE_TOKEN');
 
-
-	제공자 없이 객체 주입
+	export let OpaqueTokenProvider = {
+		provide : OPAQUE_TOKEN,
+		useValue: 인터페이스 형 변수
+	};
+```
