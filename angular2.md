@@ -80,8 +80,7 @@
 				providers: [{ provide: 제공할 클래스, useExisting: 대체 클래스}]
 			```
 <br>
-
-    - 불투명 토큰을 이용한 제공자 설정 : 인터페이스를 의존성 주입받기 위해 사용
+    - 불투명 토큰을 이용한 제공자 설정 : 인터페이스를 의존성 주입받기 위해 사용<br>
 	```typescript
 		export let OpaqueTokenProvider = {
 			provide : 인터페이스를 상속받는 클래스는 사용불가
