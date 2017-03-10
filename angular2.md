@@ -80,7 +80,7 @@
 				providers: [{ provide: 제공할 클래스, useExisting: 대체 클래스}]
 			```
 <br>
-    - 불투명 토큰을 이용한 제공자 설정 : 인터페이스를 의존성 주입받기 위해 사용<br>
+    - 불투명 토큰을 이용한 제공자 : 인터페이스를 의존성 주입받기 위해 사용<br>
 	```typescript
 		export let OpaqueTokenProvider = {
 			provide : 인터페이스를 상속받는 클래스는 사용불가
@@ -93,4 +93,25 @@
 			provide : OPAQUE_TOKEN,
 			useValue: 인터페이스 형 변수
 		};
+	```
+	```typescript
+		import { 인터페이스형 변수, 불투명제공자 } from './opaque-token.provider';
+
+		@Component({
+		 ...
+		 providers: [{provide: 불투명제공자, useValue:인터페이스형 변수}]
+		})
+	```
+	```typescript
+		@Inject(불투명 토큰을 설정한 제공자) public 주입 대상(변수 혹은 클래스)
+	```
+<br>
+    - 선택적 장식자 : 제공자가 객체를 제공해 줄 수 없는 상황에 사용, 주입받는 객체가 없더라도 애플리케이션 중단이 되지 않게...<br>
+	```typescript
+		import { Optional, ...} from '@angular/core';
+
+		...
+		export class OptionalTest {
+			constructor(@Optional() public engine: Engine ) { ... }
+		}
 	```
