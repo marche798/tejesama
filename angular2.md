@@ -23,7 +23,7 @@
 # <제공자>
 ## 1. 제공자를 통한 의존성 주입
 ![provider_injection_process](https://github.com/marche798/tejesama/blob/master/provider_injection_process.png?raw=true)
-  - @injectable 장식자로 주입할 클래스 선택<br>
+  + @injectable 장식자로 주입할 클래스 선택<br>
 	해당클래스가 의존성 주입 대상임을 명시, 생략할 수 있으나 의존성 주입 대상인지 여부가 불분명해지므로 선언하자!<br>
 	변수나 함수에는 사용불가
 ```typescript
@@ -36,7 +36,7 @@
 	}
 ```
 
-  - 주입할 클래스를 제공자에 등록 및 생성자로 의존성 주입
+  + 주입할 클래스를 제공자에 등록 및 생성자로 의존성 주입
 ```typescript
 	import { Engine } from './engine.service';
 	...
@@ -50,7 +50,7 @@
 	}
 ```
 
-  - 제공자 : 의존성 주입 시 사용할 의존성 주입 방법을 결정하는 방법 제공
+  + 제공자 : 의존성 주입 시 사용할 의존성 주입 방법을 결정하는 방법 제공
   
    1) 값 제공자 : 컨포넌트에 값을 제공 _(source : value-provider)_<br>
 ```typescript
