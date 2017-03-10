@@ -59,7 +59,7 @@
 		useValue : 사용할 값 변수
 	}
 ```
-	2) 팩토리 제공자 : 컴포넌트에 새로운 객체를 만들어 제공<br>
+2) 팩토리 제공자 : 컴포넌트에 새로운 객체를 만들어 제공<br>
 ```typescript
 	export  let ValueProvider = 
 	{
