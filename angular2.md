@@ -110,7 +110,9 @@
 	```typescript
 		import { Optional, ...} from '@angular/core';
 
-		...
+		@Component({
+		  ...
+		})
 		export class OptionalTest {
 			constructor(@Optional() public engine: Engine ) { ... }
 		}
