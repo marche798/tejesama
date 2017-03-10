@@ -51,8 +51,7 @@
 ```
 
   + 제공자의 종류
-
-    - 값 제공자 : 컨포넌트에 값을 제공 _(source : value-provider)_<br>
+    - 값 제공자 : 컨포넌트에 값을 제공 _(source : value-provider)_<br>
 	```typescript
 		export  let ValueProvider = 
 		{
