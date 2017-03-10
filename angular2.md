@@ -50,8 +50,8 @@
 	}
 ```
 
-  - 제공자의 종류<br>
-
+  - 제공자 : 의존성 주입 시 사용할 의존성 주입 방법을 결정하는 방법 제공
+  
    1) 값 제공자 : 컨포넌트에 값을 제공 _(source : value-provider)_<br>
 ```typescript
 	export  let ValueProvider = 
