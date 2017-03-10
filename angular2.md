@@ -51,8 +51,7 @@
 ```
 
   + 제공자 : 의존성 주입 시 사용할 의존성 주입 방법을 결정하는 방법 제공
-  
-   1) 값 제공자 : 컨포넌트에 값을 제공 _(source : value-provider)_<br>
+    - 값 제공자 : 컨포넌트에 값을 제공 _(source : value-provider)_<br>
 ```typescript
 	export  let ValueProvider = 
 	{
@@ -61,7 +60,7 @@
 	};
 ```
 
-   2) 팩토리 제공자 : 컴포넌트에 새로운 객체를 만들어 제공<br>
+    - 팩토리 제공자 : 컴포넌트에 새로운 객체를 만들어 제공<br>
 ```typescript
 	export  let FactoryProvider = 
 	{
@@ -71,7 +70,7 @@
 	};
 ```
 
-   3) 클래스 제공자 : 클래스 제공자를 통해 클래스 간 의존 관계를 고려해 만든 객체를 컴포넌트에 제공<br>
+    - 클래스 제공자 : 클래스 제공자를 통해 클래스 간 의존 관계를 고려해 만든 객체를 컴포넌트에 제공<br>
 ```typescript
 	export  let ValueProvider = 
 	{
